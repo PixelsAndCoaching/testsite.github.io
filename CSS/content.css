@@ -1,0 +1,162 @@
+header{
+	text-align: center;
+	color: #0B79D3;
+}
+/* default site-wide fonts */
+body{
+	font-size:1em;
+	color:#00355F;
+	font-family:'Open Sans', sans-serif, Arial;
+}
+/* styled navigation bar*/
+/*.active{
+	color:white;
+	background-color: #00355F;
+	padding: 0.75em;
+	border: #00355F 1px;
+	border-radius: 4px;
+}*/
+img{
+	max-width: 100%;
+}
+div{
+	padding: 2% 3% 1%;
+	margin: 2%;
+}
+div>p{
+	padding-left: 3%;
+	padding-top: 0.25em;
+	padding-bottom: 0.75em;
+}
+div>a{
+	padding: 2%;
+	background-color: #00355F;
+}
+#GoogleForm{
+	text-align: center;
+}
+iframe{
+	width: 80%; 
+	height: 70vh; 
+	display: block;
+	font-family:'Open Sans', sans-serif, Arial;
+}
+/*bio page specific styling: layout and photos.*/
+.left{
+	display: inline-block;
+	float: left;
+	width: 30%;
+	margin: 2%;
+}
+.right{
+	display: inline-block;
+	float: right;
+	width: 65%;
+	margin: 2%;
+}
+.lightboxP{
+	text-align: center;
+	display: block;
+}
+.lightboxP a{
+	text-align: center;
+	background-color: #FFFFFF;
+}
+.lightboxP img{
+	display: inline;
+	width: 25%;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 0.5em;
+	margin: 2%;
+}
+.lightboxP img:hover{
+	box-shadow: 0 0 2px 1px #0B79D3;
+}
+/*styling specific to workout page*/
+.workoutlinks a{
+	color: #FFFFFF;
+	border: #00355F 1px;
+	border-radius: 4px;
+	margin: 1% 3% 2%;
+}
+.workoutlinks{
+	margin-top: 1%;
+	margin-bottom: 4%;
+}
+.workoutlinks h2{
+	margin-top: 6%;
+	margin-bottom: 1%;
+}
+/*sticky footer*/
+footer{
+	background-color: #0B79D3;
+	line-height: 1.5;
+	padding: 1%;
+	text-align: center;
+	color: #FFFFFF
+}
+#container{
+	min-height: 0.25em;
+	margin-bottom: -50px;
+}
+#container:after{
+	content:"";
+	display:block;
+	height: 10px;
+}
+/*responsive styling*/
+.topnav{
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+.topnav a{
+	float: left;
+	display: block;
+	color: #FFFFFF;
+	background-color: #00355F;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1em;
+	padding: 1em;
+}
+.topnav a:hover{
+	background-color: #0B79D3;
+	color: #FFFFFF;
+	padding: 0.75em;
+	border: #00355F 1px;
+	border-radius: 4px;
+}
+.active{
+	color:white;
+	background-color: #00355F;
+}
+.topnav .icon{
+	display: none;
+}
+@media screen and (max-width: 600px){
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.icon{
+		float: right;
+		display: block;
+	}
+}
+@media screen and (max-width: 600px){
+	.topnav.responsive{position: relative;}
+	.topnav.responsive .icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
+/*bio page styling*/
+@media screen and (max-width: 600px){
+	.left, .right, .LightboxP, #GoogleForm{
+		width: 100%;
+	}
+}
